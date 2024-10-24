@@ -26,4 +26,12 @@ for folder in "${folders[@]}"; do
   fi
 done
 
+# Копируем .zshrc из домашней директории в текущую директорию
+if [ -f "$HOME/.zshrc" ]; then
+  cp "$HOME/.zshrc" "$current_dir"
+  echo "Скопировано: .zshrc"
+else
+  echo "Файл .zshrc не найден в домашней директории"
+fi
+
 
