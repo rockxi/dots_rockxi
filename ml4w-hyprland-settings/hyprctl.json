@@ -1,0 +1,22 @@
+[
+    {
+        "key": "general:border_size",
+        "value": 2
+    },
+    {
+        "key": "general:no_border_on_floating",
+        "value": false
+    },
+    {
+        "key": "decoration:rounding",
+        "value": 10
+    },
+    {
+        "key": "decoration:drop_shadow",
+        "value": false
+    },
+    {
+        "key": "decoration:blur:size",
+        "value": 3
+    }
+]
