@@ -74,7 +74,7 @@
     // Clock
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{:%H:%M | %d.%m.%Y}",
+        "format": "{:%H:%M   %d.%m.%Y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%H:%M}"
     },
@@ -137,8 +137,8 @@
         "interval": 1,
         "return-type": "json",
         "format-icons": {
-            "connected": "<span color=\"#ffffff\">VPN: ON</span>",
-            "disconnected": "<span color=\"#ffffff\">VPN: OFF</span>"
+            "connected": "<span color=\"#ffffff\">ON</span>",
+            "disconnected": "<span color=\"#ffffff\">OFF</span>"
         },
     },
    // Network

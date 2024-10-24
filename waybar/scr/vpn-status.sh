@@ -4,7 +4,7 @@
 STATUS=$(sudo vpn status)
 
 if [[ $STATUS == *"Connected"* ]]; then
-    echo '{"text": "VPN: ON", "class": "connected"}'
+    echo '{"text": "ON", "class": "connected"}'
 else
-    echo '{"text": "VPN: OFF", "class": "disconnected"}'
+    echo '{"text": "OFF", "class": "disconnected"}'
 fi
