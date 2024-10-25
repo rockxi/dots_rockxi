@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Массив названий папок
-folders=("alacritty" "hypr" "waybar" "kitty" "ml4w" "ml4w-hyprland-settings")
+folders=("alacritty" "hypr" "waybar" "kitty" "ml4w" "ml4w-hyprland-settings" "rofi")
 
 # Текущая директория
 current_dir=$(pwd)
