@@ -231,9 +231,9 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #clock {
-    background-color: @backgrounddark;
+    /* background-color: @backgrounddark; */ 
     font-size: 16px;
-    color: @textcolor1;
+    color: @textcolor3;
     border-radius: 15px;
     margin: 10px 7px 10px 0px;
 }
