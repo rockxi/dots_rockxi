@@ -93,7 +93,7 @@
 
     // Memory
     "memory": {
-        "format": "    {used} Gb  ",
+        "format": " {used} Gb  ", /*  */
         "on-click": "alacritty -e top"
     },
 

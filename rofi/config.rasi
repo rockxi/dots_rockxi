@@ -297,4 +297,8 @@ error-message {
 
 //@theme "/home/r/.local/share/rofi/themes/windows11-list-dark.rasi"
 
-@theme "/home/r/.local/share/rofi/themes/rounded-green-dark.rasi"
+//@theme "/home/r/.local/share/rofi/themes/rounded-green-dark.rasi"
+
+//@theme "/home/r/.local/share/rofi/themes/rounded-nord-dark.rasi"
+
+@theme "/home/r/.local/share/rofi/themes/rounded-purple-dark.rasi"

@@ -15,13 +15,12 @@
         "~/.config/waybar/modules.json"
     ],    
     "modules-left": [
-        "custom/appmenu",
+        // "custom/appmenu",
         //"group/quicklinks",
         "hyprland/workspaces",
         //"custom/vpn",
         "custom/vpnstatus",
         "hyprland/language",
-
     ],
     "modules-center": [
    //"hyprland/window"

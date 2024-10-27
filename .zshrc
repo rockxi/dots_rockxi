@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin:/usr/lib64/
+export PATH=$PATH:$HOME/.P/intelFPGA_lite/21.1/quartus/bin/
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 #export XAUTHORITY=~/.Xauthority
@@ -108,3 +109,5 @@ alias x="xdg-open"
 alias 'v+'="sudo vpn connect"
 alias 'v-'="sudo vpn disconnect"
 
+
+export QSYS_ROOTDIR="/home/r/.P/intelFPGA_lite/21.1/quartus/sopc_builder/bin"
