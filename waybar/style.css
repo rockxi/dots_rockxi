@@ -10,11 +10,11 @@
  * ----------------------------------------------------- 
 */
 
-@define-color backgroundlight #FFFFFF; /* #FFFFFF; */
-@define-color backgrounddark #FFFFFF;
+@define-color backgroundlight #F0F0F0; /* #FFFFFF; */
+@define-color backgrounddark #FFFFA0;
 @define-color workspacesbackground1 #FFFFFF;
-@define-color workspacesbackground2 #FFFFFF;/*#00FFA0;*/ /* #CCCCCC; */
-@define-color bordercolor #FFFFFF;
+@define-color workspacesbackground2 #F0F0F0;/*#00FFA0;*/ /* #CCCCCC; */
+@define-color bordercolor #FFFFF0;
 @define-color textcolor1 #000000;
 @define-color textcolor2 #000000;
 @define-color textcolor3 #FFFFFF;
@@ -32,7 +32,7 @@
 
 window#waybar {
     background-color: rgba(0,0,0,0);
-    border-bottom: 0px solid #ffffff;
+    border-bottom: 0px solid #FFFF00;
     /* color: #FFFFFF; */
     transition-property: background-color;
     transition-duration: .5s;
@@ -43,20 +43,20 @@ window#waybar {
  * ----------------------------------------------------- */
 
 #workspaces {
-    margin: 5px 1px 6px 1px;
+    margin: 0px 1px 6px 1px;
     padding: 0px 1px;
-    border-radius: 15px;
+    border-radius: 0px;
     border: 0px;
     font-weight: bold;
     font-style: normal;
-    font-size: 16px;
+    font-size: 13px;
     color: @textcolor1;
 }
 
 #workspaces button {
-    padding: 0px 5px;
+    padding: 0px 3px;
     margin: 4px 3px;
-    border-radius: 15px;
+    border-radius: 17px;
     border: 0px;
     color: @textcolor3;
     transition: all 0.3s ease-in-out;
@@ -65,15 +65,15 @@ window#waybar {
 #workspaces button.active {
     color: @textcolor1;
     background: @workspacesbackground2;
-    border-radius: 15px;
-    min-width: 40px;
+    border-radius: 12px;
+    min-width: 30px;
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button:hover {
     color: @textcolor1;
     background: @workspacesbackground1;
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 /* -----------------------------------------------------
@@ -102,7 +102,7 @@ tooltip label {
     padding: 2px 10px 0px 10px;
     border-radius: 12px;
     color:@textcolor2;
-    font-size:16px;
+    font-size:13px;
     font-weight:normal;
 }
 
@@ -154,7 +154,7 @@ window#waybar.empty #window {
 #custom-appmenu,
 #clock {
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: @iconcolor;
     padding: 4px 10px 2px 10px;
@@ -173,7 +173,7 @@ window#waybar.empty #window {
 #custom-quicklink10 {
     padding:0px;
     margin-right: 7px;
-    font-size:20px;
+    font-size:13px;
     color: @iconcolor;
 }
 
@@ -195,7 +195,15 @@ window#waybar.empty #window {
     margin: 10px 10px 10px 5px;
 }
 #custom-vpnstatus {
-    color:@iconcolor; 
+    color:@textcolor2; 
+    border-radius: 15px;
+    min-width: 0px;
+    margin: 10px 10px 10px 0px;
+    font-size: 13px;
+}
+
+#custom-monitors {
+    color:@textcolor2; 
     border-radius: 15px;
     min-width: 0px;
     margin: 10px 10px 10px 0px;
@@ -207,7 +215,7 @@ window#waybar.empty #window {
 #custom-exit {
     margin: 2px 20px 0px 0px;
     padding:0px;
-    font-size:20px;
+    font-size:13px;
     color: @iconcolor;
 }
 
@@ -218,8 +226,8 @@ window#waybar.empty #window {
  #disk,#memory,#cpu,#language {
     margin:0px;
     padding:0px;
-    font-size:16px;
-    color:@iconcolor;
+    font-size:13px;
+    color:@textcolor2;
 }
 
 #language {
@@ -232,8 +240,8 @@ window#waybar.empty #window {
 
 #clock {
     /* background-color: @backgrounddark; */ 
-    font-size: 16px;
-    color: @textcolor3;
+    font-size: 13px;
+    color: @textcolor1;
     border-radius: 15px;
     margin: 10px 7px 10px 0px;
 }
@@ -244,7 +252,7 @@ window#waybar.empty #window {
 
 #pulseaudio {
     background-color: @backgroundlight;
-    font-size: 16px;
+    font-size: 13px;
     color: @textcolor2;
     border-radius: 15px;
     margin: 10px 10px 10px 0px;
@@ -261,7 +269,7 @@ window#waybar.empty #window {
 
 #network {
     background-color: @backgroundlight;
-    font-size: 16px;
+    font-size: 13px;
     color: @textcolor2;
     border-radius: 15px;
     margin: 10px 10px 10px 0px;
@@ -283,7 +291,7 @@ window#waybar.empty #window {
 
  #bluetooth, #bluetooth.on, #bluetooth.connected {
     background-color: @backgroundlight;
-    font-size: 16px;
+    font-size: 13px;
     color: @textcolor2;
     border-radius: 15px;
     margin: 10px 15px 10px 0px;
@@ -301,7 +309,7 @@ window#waybar.empty #window {
 
 #battery {
     background-color: @backgroundlight;
-    font-size: 16px;
+    font-size: 13px;
     color: @textcolor2;
     border-radius: 15px;
     margin: 10px 15px 10px 0px;
@@ -366,3 +374,4 @@ label:focus {
     background-color: #f53c3c;
 }
 
+ 

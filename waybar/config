@@ -3,7 +3,7 @@
     
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     
-    "height": 30, // Waybar height (to be removed for auto height)
+    // "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     
     "spacing": 4, // Gaps between modules (4px)
@@ -21,9 +21,10 @@
         //"custom/vpn",
         "custom/vpnstatus",
         "hyprland/language",
+        "custom/monitors"
     ],
     "modules-center": [
-   //"hyprland/window"
+        //"hyprland/window",
         "clock", 
     ],
     "modules-right": [
