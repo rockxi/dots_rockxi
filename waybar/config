@@ -33,7 +33,7 @@
         "network", 
         "cpu", 
         "memory", 
-        "keyboard-state", 
+        //"keyboard-state", 
         "battery", 
         "tray",
         "custom/exit"

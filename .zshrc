@@ -4,6 +4,9 @@ export PATH=$PATH:$HOME/.local/bin:/usr/lib64/
 export PATH=$PATH:$HOME/.P/intelFPGA_lite/21.1/quartus/bin/
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export git="https://github.com"
+export mouse_mod="no"
+export YDOTOOL_SOCKET=/tmp/.ydotool_socket
 #export XAUTHORITY=~/.Xauthority
 
 # Set name of the theme to load --- if set to "random", it will
