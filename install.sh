@@ -8,4 +8,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/wintermi/zsh-lsd ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-lsd
+cp -r Hermit ~/.local/share/fonts/
 ./set_dots.sh
