@@ -74,11 +74,14 @@
     // Clock
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{:%H:%M   %d.%m}",
+        "format": "  {:%H:%M  %d.%m}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%H:%M}"
     },
-
+    "custom/padding":
+    {
+        "format": " "
+    },
     // System
     "custom/system": {
         "format": "",

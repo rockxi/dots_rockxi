@@ -17,6 +17,7 @@
     "modules-left": [
         // "custom/appmenu",
         //"group/quicklinks",
+        "custom/padding",
         "hyprland/workspaces",
         //"custom/vpn",
         "custom/vpnstatus",
