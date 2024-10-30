@@ -25,14 +25,14 @@
  * ----------------------------------------------------- */
 
 * {
-    font-family: "HurmitNerdFont", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "HurmitNerdFont", Robot, FontAwesome, Helvetica, Arial, sans-serif;
     font-size: 14px;
     border: none;
     border-radius: 0px;
 }
 
 window#waybar {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(1,1,1,0.2);
     border-bottom: 0px solid #FFFF00;
     /* color: #FFFFFF; */
     transition-property: background-color;
@@ -66,7 +66,7 @@ window#waybar {
     color: @textcolor1;
     background: #91caff;
     border-radius: 4px 4px 10px 10px;
-    min-width: 30px;
+    min-width: 45px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -245,14 +245,14 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #pulseaudio {
-    background-color: @backgroundlight;
+    background-color: #ffea2e;
     color: @textcolor2;
     border-radius: 15px;
     margin: 10px 10px 10px 0px;
 }
 
 #pulseaudio.muted {
-    background-color: @backgrounddark;
+    background-color: #ffea2e;
     color: @textcolor1;
 }
 
@@ -260,20 +260,21 @@ window#waybar.empty #window {
  * Network
  * ----------------------------------------------------- */
 
+@define-color background-network #1298ff;
 #network {
-    background-color: @backgroundlight;
+    background-color: @background-network;
     color: @textcolor2;
     border-radius: 15px;
     margin: 10px 10px 10px 0px;
 }
 
 #network.ethernet {
-    background-color: @backgroundlight;
+    background-color: @background-network;
     color: @textcolor2;
 }
 
 #network.wifi {
-    background-color: @backgroundlight;
+    background-color: @background-network;
     color: @textcolor2;
 }
 

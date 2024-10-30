@@ -48,7 +48,7 @@
     
     // Power Menu
     "custom/exit": {
-        "format": " ",
+        "format": "  ",
         "tooltip-format": "Powermenu",
         "on-click": "wlogout -b 4",
         "tooltip": false
@@ -90,14 +90,14 @@
 
     // CPU
     "cpu": {
-        "format": "   {usage}%",
-        "on-click": "alacritty -e top"
+        "format": " {usage}%",
+        "on-click": "gnome-system-monitor"
     },
 
     // Memory
     "memory": {
-        "format": " {used} Gb  ", /*  */
-        "on-click": "alacritty -e top"
+        "format": " {used} Gb ", /*  */
+        "on-click": "gnome-system-monitor"
     },
 
     // Harddisc space used
@@ -182,7 +182,7 @@
     // Pulseaudio
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}   {volume}%",
+        "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": "",//{format_source}",

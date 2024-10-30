@@ -22,10 +22,10 @@
         //"custom/vpn",
         "custom/vpnstatus",
         "hyprland/language",
-        "custom/monitors"
+        "custom/monitors", 
+        "hyprland/window",
     ],
     "modules-center": [
-        //"hyprland/window",
         "clock", 
     ],
     "modules-right": [
