@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias n=nvim
+alias p="python main.py"
 alias x="xdg-open"
 alias 'v+'="sudo vpn connect"
 alias 'v-'="sudo vpn disconnect"

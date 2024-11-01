@@ -2,9 +2,9 @@
     // "layer": "top", // Waybar at top layer
     
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    
-    // "height": 300, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
+    "margin-top": 7, 
+    //"height": 30, // Waybar height (to be removed for auto height)
+     "width": 1800, // Waybar width
     
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -19,10 +19,9 @@
         //"group/quicklinks",
         "custom/padding",
         "hyprland/workspaces",
-        //"custom/vpn",
         "custom/vpnstatus",
         "hyprland/language",
-        "custom/monitors", 
+        "custom/monitors",
         "hyprland/window",
     ],
     "modules-center": [
@@ -30,7 +29,7 @@
     ],
     "modules-right": [
         "mpd",
-        "bluetooth",
+        // "bluetooth",
         "pulseaudio",
         "network", 
         "cpu", 
