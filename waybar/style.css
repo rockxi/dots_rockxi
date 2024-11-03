@@ -21,7 +21,7 @@
 
 /* Удалены фиксированные высоты */
 window#waybar {
-    background-color: rgba(255,255,255,0.0);
+    background-color: rgba(160,160,160,0.3);
     border-bottom: 0px solid #FFFF00;
     /* color: #FFFFFF; */
     transition-property: background-color;
@@ -46,7 +46,7 @@ window#waybar {
     margin: 2px 2px; /* Уменьшено */
     border-radius: 12px; /* Уменьшено */
     border: 0px;
-    color: @textcolor3;
+    color: @textcolor2;
     transition: all 0.3s ease-in-out;
 }
 
@@ -228,7 +228,7 @@ window#waybar.empty #window {
 * Pulseaudio
 ----------------------------------------------------- */
 #pulseaudio {
-    background-color: #ffea2e;
+    background-color: #91caff;
     color: @textcolor2;
     border-radius: 30px; /* Уменьшено */
     margin: 5px 5px 5px 0px; /* Уменьшено */
@@ -236,7 +236,7 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-    background-color: #ffea2e;
+    background-color: #91caff;
     color: @textcolor1;
 }
 
@@ -246,7 +246,6 @@ window#waybar.empty #window {
 @define-color background-network #1298ff;
 
 #network {
-    background-color: @background-network;
     color: @textcolor2;
     border-radius: 30px; /* Уменьшено */
     margin: 5px 5px 5px 0px; /* Уменьшено */
@@ -255,7 +254,6 @@ window#waybar.empty #window {
 
 #network.ethernet,
 #network.wifi {
-    background-color: @background-network;
     color: @textcolor2;
 }
 
@@ -346,5 +344,5 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: #79F0F9;
 }

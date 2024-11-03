@@ -67,7 +67,7 @@
         "timezone": "Russia/Moscow",
         "format": "  {:%H:%M %A %d.%m.%y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%H:%M}"
+        "format-alt": "  {:%H:%M}"
     },
     "custom/padding":
     {
@@ -81,7 +81,7 @@
 
     // CPU
     "cpu": {
-        "format": "  {usage}%",
+        "format": "   {usage}%",
         "on-click": "gnome-system-monitor"
     },
 
@@ -164,8 +164,8 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}   {capacity}%  {time}",
-        "format-charging": "  {capacity}%",
+        "format": "{icon} {capacity}%  {time}",
+        "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon}  {time}",
         // "format-good": "", // An empty format will hide the module
