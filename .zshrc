@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin:/usr/lib64/
 export PATH=$PATH:$HOME/.P/intelFPGA_lite/21.1/quartus/bin/
+export PATH=$PATH:$HOME/.P/swww/target/release
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export git="https://github.com"

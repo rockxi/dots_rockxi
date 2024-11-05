@@ -21,7 +21,7 @@
 
 /* Удалены фиксированные высоты */
 window#waybar {
-    background-color: rgba(160,160,160,0.3);
+    background-color: rgba(230,230,230,0.3);
     border-bottom: 0px solid #FFFF00;
     /* color: #FFFFFF; */
     transition-property: background-color;
@@ -344,5 +344,5 @@ label:focus {
 }
 
 #network {
-    background-color: #79F0F9;
+    background-color: @background-network;
 }

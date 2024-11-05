@@ -10,3 +10,8 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/wintermi/zsh-lsd ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-lsd
 cp -r Hermit ~/.local/share/fonts/
 ./set_dots.sh
+
+git clone https://github.com/LGFae/swww
+cd swww
+cargo build --release
+echo 'export PATH=$PATH:$HOME/.P/swww/target/release' >> ~/.zshrc
