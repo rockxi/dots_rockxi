@@ -1,12 +1,12 @@
 [font]
-size = 11.0
+size = 12.0
 
 [shell]
 program = "/bin/zsh"
 args = ["-l"]
 
 [font.normal]
-family = "HurmitNerdFont"
+family = "Hurmit Nerd Font"
 style = "Regular"
 
 [window]

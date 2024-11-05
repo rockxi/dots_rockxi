@@ -1,27 +1,27 @@
 
 @define-color backgroundlight #F0F0F0; /* #FFFFFF; */
-@define-color backgrounddark #1cad82;
+@define-color backgrounddark #549563; /* #1cad82; */
 @define-color workspacesbackground1 #FFFFFF;
 @define-color workspacesbackground2 #00DFB0; /* #CCCCCC; */
 @define-color bordercolor #FFFFF0;
 @define-color textcolor1 #000000;
-@define-color textcolor2 #000000;
-@define-color textcolor3 #FFFFFF;
+@define-color fontblack #000000;
+@define-color fontwhite #FFFFFF;
 @define-color iconcolor #FFFFFF;
 
-/* -----------------------------------------------------
-* General
------------------------------------------------------ */
+@define-color fontblack #050611;
+@define-color fontwhite #FAF0E6;
+@define-color float_font_color #050611;
 * {
-    font-family: "HurmitNerdFont", Roboto, FontAwesome, Helvetica, Arial, sans-serif;
-    font-size: 13px; 
+    font-family: "Hurmit Nerd Font", Roboto, FontAwesome, Helvetica, Arial, sans-serif;
+    font-size: 14px; 
     border: none;
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 
 /* Удалены фиксированные высоты */
 window#waybar {
-    background-color: rgba(230,230,230,0.3);
+    background-color: rgba(230,230,230,0.0);
     border-bottom: 0px solid #FFFF00;
     /* color: #FFFFFF; */
     transition-property: background-color;
@@ -29,16 +29,12 @@ window#waybar {
     padding: 2px 0px; /* Добавлено уменьшение вертикальных отступов */
 }
 
-/* -----------------------------------------------------
-* Workspaces
------------------------------------------------------ */
 #workspaces {
     margin: 4px 3px 4px 4px; /* Уменьшено */
     padding: 0px 1px;
     border-radius: 4px 4px 10px 10px; /* Уменьшено */
     border: 0px;
     font-weight: bold;
-    font-style: normal;
 }
 
 #workspaces button {
@@ -46,7 +42,7 @@ window#waybar {
     margin: 2px 2px; /* Уменьшено */
     border-radius: 12px; /* Уменьшено */
     border: 0px;
-    color: @textcolor2;
+    color: @float_font_color;
     transition: all 0.3s ease-in-out;
 }
 
@@ -64,9 +60,6 @@ window#waybar {
     border-radius: 10px; /* Уменьшено */
 }
 
-/* -----------------------------------------------------
-* Tooltips
------------------------------------------------------ */
 tooltip {
     border-radius: 8px; /* Уменьшено */
     background-color: @backgroundlight;
@@ -76,18 +69,18 @@ tooltip {
 }
 
 tooltip label {
-    color: @textcolor2;
+    color: @fontblack;
 }
 
-/* -----------------------------------------------------
-* Window
------------------------------------------------------ */
+
+
+
 #window {
     background: @backgroundlight;
     margin: 5px 10px 5px 0px; /* Уменьшено */
     padding: 1px 8px 0px 8px; /* Уменьшено */
     border-radius: 20px; /* Уменьшено */
-    color: @textcolor2;
+    color: @fontblack;
     font-weight: normal;
 }
 
@@ -95,9 +88,6 @@ window#waybar.empty #window {
     background-color: transparent;
 }
 
-/* -----------------------------------------------------
-* Taskbar
------------------------------------------------------ */
 #taskbar {
     background: @backgroundlight;
     margin: 4px 10px 4px 0px; /* Уменьшено */
@@ -114,9 +104,6 @@ window#waybar.empty #window {
     padding: 0px 3px; /* Уменьшено */
 }
 
-/* -----------------------------------------------------
-* Modules
------------------------------------------------------ */
 .modules-left > widget:first-child > #workspaces {
     margin-left: 0;
 }
@@ -125,9 +112,6 @@ window#waybar.empty #window {
     margin-right: 0;
 }
 
-/* -----------------------------------------------------
-* Custom Quicklinks
------------------------------------------------------ */
 #custom-browser,
 #custom-filemanager,
 #network,
@@ -156,9 +140,6 @@ window#waybar.empty #window {
     color: @iconcolor;
 }
 
-/* -----------------------------------------------------
-* Custom Modules
------------------------------------------------------ */
 #custom-appmenu {
     background-color: @backgrounddark;
     color: @textcolor1;
@@ -168,55 +149,46 @@ window#waybar.empty #window {
 
 #custom-vpn {
     background-color: @backgrounddark;
-    color: @textcolor2;
     border-radius: 10px; /* Уменьшено */
     min-width: 75px; /* Уменьшено с 95px */
     margin: 5px 5px 5px 2px; /* Уменьшено */
 }
 
 #custom-vpnstatus {
-    color: @textcolor2;
     border-radius: 10px; /* Уменьшено */
     min-width: 0px;
     margin: 5px 5px 5px 0px; /* Уменьшено */
 }
 
 #custom-monitors {
-    color: @textcolor2;
     border-radius: 10px; /* Уменьшено */
     min-width: 0px;
     margin: 5px 5px 5px 0px; /* Уменьшено */
 }
 
-/* -----------------------------------------------------
-* Custom Exit
------------------------------------------------------ */
 #custom-exit {
     margin: 1px 15px 0px 0px; /* Уменьшено */
     padding: 0px;
-    color: @textcolor2;
+    color: @fontblack;
 }
 
-/* -----------------------------------------------------
-* Hardware Group
------------------------------------------------------ */
 #disk,
 #memory,
 #cpu,
+#custom-vpnstatus,
 #language,
+#custom-vpn,
+#custom-monitors,
 #temperature {
     margin: 0px;
     padding: 0px;
-    color: @textcolor2;
+    color: @float_font_color;
 }
 
 #language {
     margin-right: 7px; /* Уменьшено */
 }
 
-/* -----------------------------------------------------
-* Clock
------------------------------------------------------ */
 #clock {
     /* background-color: @backgrounddark; */
     color: @textcolor1;
@@ -224,12 +196,9 @@ window#waybar.empty #window {
     margin: 5px 5px 5px 0px; /* Уменьшено */
 }
 
-/* -----------------------------------------------------
-* Pulseaudio
------------------------------------------------------ */
 #pulseaudio {
     background-color: #91caff;
-    color: @textcolor2;
+    color: @fontblack;
     border-radius: 30px; /* Уменьшено */
     margin: 5px 5px 5px 0px; /* Уменьшено */
     padding: 2px 8px 1px 8px; /* Уменьшено */
@@ -240,13 +209,10 @@ window#waybar.empty #window {
     color: @textcolor1;
 }
 
-/* -----------------------------------------------------
-* Network
------------------------------------------------------ */
-@define-color background-network #1298ff;
+@define-color background-network  	#f2e658;
 
 #network {
-    color: @textcolor2;
+    color: @fontblack;
     border-radius: 30px; /* Уменьшено */
     margin: 5px 5px 5px 0px; /* Уменьшено */
     padding: 2px 8px 1px 8px; /* Уменьшено */
@@ -254,21 +220,18 @@ window#waybar.empty #window {
 
 #network.ethernet,
 #network.wifi {
-    color: @textcolor2;
+    color: @fontblack;
 }
 
 #network.disconnected {
     background-color: #f53c3c;
 }
 
-/* -----------------------------------------------------
-* Bluetooth
------------------------------------------------------ */
 #bluetooth,
 #bluetooth.on,
 #bluetooth.connected {
     background-color: @backgroundlight;
-    color: @textcolor2;
+    color: @fontblack;
     border-radius: 20px; /* Уменьшено */
     margin: 5px 10px 5px 0px; /* Уменьшено */
     padding: 2px 8px 1px 8px; /* Уменьшено */
@@ -280,12 +243,9 @@ window#waybar.empty #window {
     margin: 0px;
 } */
 
-/* -----------------------------------------------------
-* Battery
------------------------------------------------------ */
 #battery {
     background-color: @backgroundlight;
-    color: @textcolor2;
+    color: @fontblack;
     border-radius: 30px; /* Уменьшено */
     margin: 5px 10px 5px 0px; /* Уменьшено */
     padding: 2px 8px 1px 8px; /* Уменьшено */
@@ -293,20 +253,20 @@ window#waybar.empty #window {
 
 #battery.charging,
 #battery.plugged {
-    color: @textcolor2;
+    color: @fontblack;
     background-color: @backgroundlight;
 }
 
 @keyframes blink {
     to {
         background-color: @backgroundlight;
-        color: @textcolor2;
+        color: @fontblack;
     }
 }
 
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
-    color: @textcolor3;
+    color: @fontwhite;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -314,9 +274,6 @@ window#waybar.empty #window {
     animation-direction: alternate;
 }
 
-/* -----------------------------------------------------
-* Tray
------------------------------------------------------ */
 #tray {
     margin: 0px 8px 0px 0px; /* Уменьшено */
 }
@@ -332,9 +289,6 @@ window#waybar.empty #window {
     padding: 2px 6px; /* Уменьшено */
 }
 
-/* -----------------------------------------------------
-* Other
------------------------------------------------------ */
 label:focus {
     background-color: #000000;
 }

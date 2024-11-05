@@ -11,6 +11,7 @@ git clone https://github.com/wintermi/zsh-lsd ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
 cp -r Hermit ~/.local/share/fonts/
 ./set_dots.sh
 
+cp -r .wallpapers ~/.wallpapers 
 git clone https://github.com/LGFae/swww
 cd swww
 cargo build --release

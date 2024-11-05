@@ -134,7 +134,7 @@
         "interval": 1
     },
     "custom/vpnstatus": {
-        "format": "󰖂  {}",
+        "format": "󰖂  {} ",
         "exec": "~/.config/waybar/scr/vpn-status.sh",
         "interval": 1,
         "return-type": "json",
