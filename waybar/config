@@ -21,8 +21,8 @@
         "hyprland/workspaces",
         "custom/vpnstatus",
         "hyprland/language",
-        "custom/monitors",
-        "hyprland/window",
+        "custom/monitors"
+        //"hyprland/window",
     ],
     "modules-center": [
         "clock", 

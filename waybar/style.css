@@ -11,17 +11,19 @@
 
 @define-color fontblack #050611;
 @define-color fontwhite #FAF0E6;
-@define-color float_font_color #050611;
+@define-color float_font_color #ffffff;
+@define-color background-network  	#91caff;
+@define-color background-audio  	#f2e658;
 * {
     font-family: "Hurmit Nerd Font", Roboto, FontAwesome, Helvetica, Arial, sans-serif;
-    font-size: 14px; 
+    font-size: 13px; 
     border: none;
     /* border-radius: 50px; */
 }
 
 /* Удалены фиксированные высоты */
 window#waybar {
-    background-color: rgba(230,230,230,0.0);
+    background-color: rgba(0,0,0,0.0);
     border-bottom: 0px solid #FFFF00;
     /* color: #FFFFFF; */
     transition-property: background-color;
@@ -169,7 +171,7 @@ window#waybar.empty #window {
 #custom-exit {
     margin: 1px 15px 0px 0px; /* Уменьшено */
     padding: 0px;
-    color: @fontblack;
+    color: @float_font_color;
 }
 
 #disk,
@@ -197,7 +199,7 @@ window#waybar.empty #window {
 }
 
 #pulseaudio {
-    background-color: #91caff;
+    background-color: @background-audio;
     color: @fontblack;
     border-radius: 30px; /* Уменьшено */
     margin: 5px 5px 5px 0px; /* Уменьшено */
@@ -205,11 +207,10 @@ window#waybar.empty #window {
 }
 
 #pulseaudio.muted {
-    background-color: #91caff;
+    background-color: @background-audio;
     color: @textcolor1;
 }
 
-@define-color background-network  	#f2e658;
 
 #network {
     color: @fontblack;

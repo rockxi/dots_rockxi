@@ -146,9 +146,9 @@
    // Network
     "network": {
         "format": "{ifname}",
-        "format-wifi": "  {essid}", /* "    {signalStrength}% ", */
+        "format-wifi": " ", /* "    {signalStrength}% ", */
         "format-ethernet": "  {ipaddr}",
-        "format-disconnected": "Not connected", //An empty format will hide the module.
+        "format-disconnected": " 󰖪 ", //An empty format will hide the module.
         "tooltip-format": " {ifname} via {gwaddri}",
         "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
@@ -165,8 +165,8 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%  {time}",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format-charging": "󰂆 {capacity}%",
+        "format-plugged": "󰂅 {capacity}%",
         "format-alt": "{icon}  {time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
