@@ -2,17 +2,17 @@
     // Workspaces
     "hyprland/workspaces" : {
         "on-click": "activate",
-        "active-only": false,
+        "active-only": true,
         "all-outputs": true,
         "format": "{}",
         "format-icons": {
 			"urgent": "",
-			"active": "",
-			"default": ""
+			"active": " ",
+			"default": " "
         },
-        "persistent-workspaces": {
-             "*": 5
-        }       
+        //"persistent-workspaces": {
+        //     "*": 1
+        //}       
     },
 
     // Hyprland Window
@@ -164,10 +164,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon} {capacity}%  {time}",
-        "format-charging": "󰂆 {capacity}%",
-        "format-plugged": "󰂅 {capacity}%",
-        "format-alt": "{icon}  {time}",
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󱐋",
+        "format-plugged": "{capacity}% 󱐋",
+        "format-alt": "{capacity}%  {time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " "]
@@ -179,7 +179,7 @@
         "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "Muted",//{format_source}",
+        "format-muted": " X%",//{format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -196,8 +196,8 @@
 
     // Bluetooth
     "bluetooth": {
-        "format": " 󰂯 ",
-        "format-disabled": "",
+        "format": "󰂯 ",
+        "format-disabled": "󰂲",
         "format-off": "",
         "interval": 30,
         "on-click": "blueman-manager",

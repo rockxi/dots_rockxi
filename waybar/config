@@ -21,23 +21,22 @@
         "hyprland/workspaces",
         "hyprland/language",
         "custom/vpnstatus",
-        "custom/monitors"
+        "custom/monitors",
+        "pulseaudio"
         //"hyprland/window",
     ],
     "modules-center": [
         "clock", 
     ],
     "modules-right": [
-        "mpd",
-        // "bluetooth",
-        "pulseaudio",
-        "network", 
+        "battery", 
         "cpu", 
         "memory", 
         "temperature",
         //"keyboard-state", 
-        "battery", 
+        "bluetooth",
+        "network", 
         "tray",
-        "custom/exit"
+        "custom/padding"
     ]
 }

@@ -11,9 +11,9 @@
 
 @define-color fontblack #050611;
 @define-color fontwhite #FAF0E6;
-@define-color float_font_color #000000;
-@define-color background-network  	#91caff;
-@define-color background-audio  	#f2e658;
+@define-color float_font_color #ffffff;
+/* @define-color background-network  	#91caff; */
+/* @define-color background-audio  	#f2e658; */
 * {
     font-family: "Hurmit Nerd Font", Roboto, FontAwesome, Helvetica, Arial, sans-serif;
     font-size: 13px; 
@@ -49,8 +49,8 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: @textcolor1;
-    background: #91caff;
+    color: @float_font_color;
+    /* background: #91caff; */
     border-radius: 4px 4px 10px 10px; 
     min-width: 35px; /* Уменьшено с 45px */
     transition: all 0.3s ease-in-out;
@@ -116,14 +116,11 @@ window#waybar.empty #window {
 
 #custom-browser,
 #custom-filemanager,
-#network,
-#pulseaudio,
-#battery,
 #custom-appmenu,
 #clock {
     margin-right: 15px; 
-    background-color: @backgrounddark;
-    color: @iconcolor;
+    background-color: @backgroundlight; /* @backgrounddark; */
+    color: @float_font_color; /* @iconcolor; */
     padding: 2px 8px 1px 8px; 
 }
 
@@ -199,29 +196,26 @@ window#waybar.empty #window {
 }
 
 #pulseaudio {
-    background-color: @background-audio;
-    color: @fontblack;
+    color: @float_font_color;
     border-radius: 30px; 
     margin: 5px 5px 5px 0px;
     padding: 2px 8px 1px 8px;
 }
 
 #pulseaudio.muted {
-    background-color: @background-audio;
-    color: @textcolor1;
+    color: @float_font_color;
 }
 
 
 #network {
-    color: @fontblack;
     border-radius: 30px;
     margin: 5px 5px 5px 0px;
-    padding: 2px 8px 1px 8px;
+    /* padding: 2px 8px 1px 8px; */
 }
 
 #network.ethernet,
 #network.wifi {
-    color: @fontblack;
+    color: @float_font_color;
 }
 
 #network.disconnected {
@@ -231,11 +225,7 @@ window#waybar.empty #window {
 #bluetooth,
 #bluetooth.on,
 #bluetooth.connected {
-    background-color: @backgroundlight;
-    color: @fontblack;
-    border-radius: 20px; 
-    margin: 5px 10px 5px 0px; 
-    padding: 2px 8px 1px 8px; 
+    color: @float_font_color;
 }
 
 /* #bluetooth.off {
@@ -245,17 +235,10 @@ window#waybar.empty #window {
 } */
 
 #battery {
-    background-color: @backgroundlight;
-    color: @fontblack;
+    /* background-color: @backgroundlight; */
+    color: @float_font_color;/* color: @fontblack; */
     border-radius: 30px; 
-    margin: 5px 10px 5px 0px; 
     padding: 2px 8px 1px 8px; 
-}
-
-#battery.charging,
-#battery.plugged {
-    color: @fontblack;
-    background-color: @backgroundlight;
 }
 
 @keyframes blink {
@@ -298,6 +281,3 @@ label:focus {
     background-color: #90b1b1;
 }
 
-#network {
-    background-color: @background-network;
-}

@@ -34,10 +34,10 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "Fira Sans 11";
+    font:                       "HermitNerdFont";
     show-icons:                 false;
     icon-theme:                 "kora";
-    display-drun:               "APPS";
+    display-drun:               "--->";
     display-run:                "RUN";
     display-filebrowser:        "FILES";
     display-window:             "WINDOW";
@@ -301,4 +301,6 @@ error-message {
 
 //@theme "/home/r/.local/share/rofi/themes/rounded-nord-dark.rasi"
 
-@theme "/home/r/.local/share/rofi/themes/rounded-purple-dark.rasi"
+//@theme "/home/r/.local/share/rofi/themes/rounded-purple-dark.rasi"
+
+@theme "/usr/share/rofi/themes/dmenu.rasi"
