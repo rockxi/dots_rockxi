@@ -34,10 +34,10 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "HermitNerdFont";
-    show-icons:                 false;
+    font:                       "Hermit";
+    show-icons:                 true;
     icon-theme:                 "kora";
-    display-drun:               "--->";
+    display-drun:               " ";
     display-run:                "RUN";
     display-filebrowser:        "FILES";
     display-window:             "WINDOW";
@@ -67,7 +67,7 @@ window {
     anchor:                       north;
     fullscreen:                   false;
     enabled:                      true;
-    border-radius:                10px;
+    border-radius:                7px;
     background-color:             transparent;
 }
 
@@ -303,4 +303,4 @@ error-message {
 
 //@theme "/home/r/.local/share/rofi/themes/rounded-purple-dark.rasi"
 
-@theme "/usr/share/rofi/themes/dmenu.rasi"
+@theme "./dmenu.rasi"

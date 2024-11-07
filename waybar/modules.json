@@ -65,9 +65,9 @@
     // Clock
     "clock": {
         "timezone": "Russia/Moscow",
-        "format": "  {:%H:%M %A %d.%m.%y}",
+        "format": "{:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "  {:%H:%M}"
+        "format-alt": "{:%H:%M %A %d.%m.%y}" 
     },
     "custom/padding":
     {
