@@ -11,7 +11,7 @@
 
 @define-color fontblack #050611;
 @define-color fontwhite #FAF0E6;
-@define-color float_font_color #ffffff;
+@define-color float_font_color #000000;
 @define-color background-network  	#91caff;
 @define-color background-audio  	#f2e658;
 * {
@@ -32,17 +32,17 @@ window#waybar {
 }
 
 #workspaces {
-    margin: 4px 3px 4px 4px; /* Уменьшено */
+    margin: 4px 3px 4px 4px; 
     padding: 0px 1px;
-    border-radius: 4px 4px 10px 10px; /* Уменьшено */
+    border-radius: 4px 4px 10px 10px; 
     border: 0px;
     font-weight: bold;
 }
 
 #workspaces button {
-    padding: 1px 2px; /* Уменьшено */
-    margin: 2px 2px; /* Уменьшено */
-    border-radius: 12px; /* Уменьшено */
+    padding: 1px 2px; 
+    margin: 2px 2px; 
+    border-radius: 12px; 
     border: 0px;
     color: @float_font_color;
     transition: all 0.3s ease-in-out;
@@ -51,7 +51,7 @@ window#waybar {
 #workspaces button.active {
     color: @textcolor1;
     background: #91caff;
-    border-radius: 4px 4px 10px 10px; /* Уменьшено */
+    border-radius: 4px 4px 10px 10px; 
     min-width: 35px; /* Уменьшено с 45px */
     transition: all 0.3s ease-in-out;
 }
@@ -59,14 +59,14 @@ window#waybar {
 #workspaces button:hover {
     color: @textcolor1;
     background: @workspacesbackground1;
-    border-radius: 10px; /* Уменьшено */
+    border-radius: 10px; 
 }
 
 tooltip {
-    border-radius: 8px; /* Уменьшено */
+    border-radius: 8px; 
     background-color: @backgroundlight;
     opacity: 0.8;
-    padding: 10px; /* Уменьшено */
+    padding: 10px; 
     margin: 0px;
 }
 
@@ -79,9 +79,9 @@ tooltip label {
 
 #window {
     background: @backgroundlight;
-    margin: 5px 10px 5px 0px; /* Уменьшено */
-    padding: 1px 8px 0px 8px; /* Уменьшено */
-    border-radius: 20px; /* Уменьшено */
+    margin: 5px 10px 5px 0px; 
+    padding: 1px 8px 0px 8px; 
+    border-radius: 20px; 
     color: @fontblack;
     font-weight: normal;
 }
@@ -92,18 +92,18 @@ window#waybar.empty #window {
 
 #taskbar {
     background: @backgroundlight;
-    margin: 4px 10px 4px 0px; /* Уменьшено */
+    margin: 4px 10px 4px 0px; 
     padding: 0px;
-    border-radius: 10px; /* Уменьшено */
+    border-radius: 10px; 
     font-weight: normal;
     font-style: normal;
-    border: 2px solid @backgroundlight; /* Уменьшено */
+    border: 2px solid @backgroundlight; 
 }
 
 #taskbar button {
     margin: 0;
-    border-radius: 10px; /* Уменьшено */
-    padding: 0px 3px; /* Уменьшено */
+    border-radius: 10px; 
+    padding: 0px 3px; 
 }
 
 .modules-left > widget:first-child > #workspaces {
@@ -121,10 +121,10 @@ window#waybar.empty #window {
 #battery,
 #custom-appmenu,
 #clock {
-    margin-right: 15px; /* Уменьшено */
+    margin-right: 15px; 
     background-color: @backgrounddark;
     color: @iconcolor;
-    padding: 2px 8px 1px 8px; /* Уменьшено */
+    padding: 2px 8px 1px 8px; 
 }
 
 #custom-quicklink1,
@@ -138,38 +138,38 @@ window#waybar.empty #window {
 #custom-quicklink9,
 #custom-quicklink10 {
     padding: 0px;
-    margin-right: 5px; /* Уменьшено */
+    margin-right: 5px; 
     color: @iconcolor;
 }
 
 #custom-appmenu {
     background-color: @backgrounddark;
     color: @textcolor1;
-    border-radius: 10px; /* Уменьшено */
-    margin: 5px; /* Уменьшено */
+    border-radius: 10px; 
+    margin: 5px; 
 }
 
 #custom-vpn {
     background-color: @backgrounddark;
-    border-radius: 10px; /* Уменьшено */
+    border-radius: 10px; 
     min-width: 75px; /* Уменьшено с 95px */
-    margin: 5px 5px 5px 2px; /* Уменьшено */
+    margin: 5px 5px 5px 2px; 
 }
 
 #custom-vpnstatus {
-    border-radius: 10px; /* Уменьшено */
+    border-radius: 10px; 
     min-width: 0px;
-    margin: 5px 5px 5px 0px; /* Уменьшено */
+    margin: 5px 5px 5px 0px; 
 }
 
 #custom-monitors {
-    border-radius: 10px; /* Уменьшено */
+    border-radius: 10px; 
     min-width: 0px;
-    margin: 5px 5px 5px 0px; /* Уменьшено */
+    margin: 5px 5px 5px 0px; 
 }
 
 #custom-exit {
-    margin: 1px 15px 0px 0px; /* Уменьшено */
+    margin: 1px 15px 0px 0px; 
     padding: 0px;
     color: @float_font_color;
 }
@@ -188,22 +188,22 @@ window#waybar.empty #window {
 }
 
 #language {
-    margin-right: 7px; /* Уменьшено */
+    margin-right: 7px;
 }
 
 #clock {
-    /* background-color: @backgrounddark; */
+
     color: @textcolor1;
-    border-radius: 20px; /* Уменьшено */
-    margin: 5px 5px 5px 0px; /* Уменьшено */
+    border-radius: 20px;
+    margin: 5px 5px 5px 0px;
 }
 
 #pulseaudio {
     background-color: @background-audio;
     color: @fontblack;
-    border-radius: 30px; /* Уменьшено */
-    margin: 5px 5px 5px 0px; /* Уменьшено */
-    padding: 2px 8px 1px 8px; /* Уменьшено */
+    border-radius: 30px; 
+    margin: 5px 5px 5px 0px;
+    padding: 2px 8px 1px 8px;
 }
 
 #pulseaudio.muted {
@@ -214,9 +214,9 @@ window#waybar.empty #window {
 
 #network {
     color: @fontblack;
-    border-radius: 30px; /* Уменьшено */
-    margin: 5px 5px 5px 0px; /* Уменьшено */
-    padding: 2px 8px 1px 8px; /* Уменьшено */
+    border-radius: 30px;
+    margin: 5px 5px 5px 0px;
+    padding: 2px 8px 1px 8px;
 }
 
 #network.ethernet,
@@ -233,9 +233,9 @@ window#waybar.empty #window {
 #bluetooth.connected {
     background-color: @backgroundlight;
     color: @fontblack;
-    border-radius: 20px; /* Уменьшено */
-    margin: 5px 10px 5px 0px; /* Уменьшено */
-    padding: 2px 8px 1px 8px; /* Уменьшено */
+    border-radius: 20px; 
+    margin: 5px 10px 5px 0px; 
+    padding: 2px 8px 1px 8px; 
 }
 
 /* #bluetooth.off {
@@ -247,9 +247,9 @@ window#waybar.empty #window {
 #battery {
     background-color: @backgroundlight;
     color: @fontblack;
-    border-radius: 30px; /* Уменьшено */
-    margin: 5px 10px 5px 0px; /* Уменьшено */
-    padding: 2px 8px 1px 8px; /* Уменьшено */
+    border-radius: 30px; 
+    margin: 5px 10px 5px 0px; 
+    padding: 2px 8px 1px 8px; 
 }
 
 #battery.charging,
@@ -276,7 +276,7 @@ window#waybar.empty #window {
 }
 
 #tray {
-    margin: 0px 8px 0px 0px; /* Уменьшено */
+    margin: 0px 8px 0px 0px; 
 }
 
 #tray > .passive {
@@ -286,8 +286,8 @@ window#waybar.empty #window {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
-    border-radius: 10px; /* Уменьшено */
-    padding: 2px 6px; /* Уменьшено */
+    border-radius: 10px; 
+    padding: 2px 6px; 
 }
 
 label:focus {
