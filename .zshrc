@@ -2,8 +2,11 @@
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin:/usr/lib64/
 export PATH=$PATH:$HOME/.P/intelFPGA_lite/21.1/quartus/bin/
-export PATH=$PATH:$HOME/.P/swww/target/release
-# Path to your Oh My Zsh installation.
+export PATH=$PATH:$HOME/.P/swww/target/release:$HOME/.P/questasim2/questasim/linux_x86_64
+export PATH=$PATH:$HOME/.P/questa/questasim/linux_x86_64
+export PATH=$PATH:$HOME/.P/questa/questasim/RUVM_2021.2
+export LM_LICENSE_FILE="/home/r/.P/questa/questasim/license.dat"
+
 export ZSH="$HOME/.oh-my-zsh"
 export git="https://github.com"
 export mouse_mod="no"
@@ -113,6 +116,6 @@ alias p="python main.py"
 alias x="xdg-open"
 alias 'v+'="sudo vpn connect"
 alias 'v-'="sudo vpn disconnect"
-
+alias typing="$HOME/.P/termboard/main"
 
 export QSYS_ROOTDIR="/home/r/.P/intelFPGA_lite/21.1/quartus/sopc_builder/bin"

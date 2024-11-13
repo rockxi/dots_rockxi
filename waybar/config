@@ -2,9 +2,10 @@
     // "layer": "top", // Waybar at top layer
     
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "margin-top": 7, 
+    "margin-top": 5,
+    "margin-bottom": 0,
     //"height": 30, // Waybar height (to be removed for auto height)
-     "width": 1800, // Waybar width
+    //"width": 1600, // Waybar width
     
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -15,28 +16,27 @@
         "~/.config/waybar/modules.json"
     ],    
     "modules-left": [
-        // "custom/appmenu",
-        //"group/quicklinks",
-        "custom/padding",
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
         "hyprland/workspaces",
         "hyprland/language",
         "custom/vpnstatus",
         "custom/monitors",
-        "pulseaudio"
-        //"hyprland/window",
-    ],
-    "modules-center": [
-        "clock", 
-    ],
-    "modules-right": [
-        "battery", 
-        "cpu", 
-        "memory", 
-        "temperature",
-        //"keyboard-state", 
+        //"custom/padding",
+        "pulseaudio",
+        "battery",
+        //"custom/padding",
+        "memory",
+        //"cpu",
+        //"temperature",
+        //"keyboard-state",
+        //"custom/padding",
         "bluetooth",
         "network", 
         "tray",
+        "clock", 
         "custom/padding"
     ]
 }

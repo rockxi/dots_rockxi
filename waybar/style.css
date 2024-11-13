@@ -18,7 +18,6 @@
     font-family: "Hurmit Nerd Font", Roboto, FontAwesome, Helvetica, Arial, sans-serif;
     font-size: 13px; 
     border: none;
-    /* border-radius: 50px; */
 }
 
 /* Удалены фиксированные высоты */
@@ -32,7 +31,7 @@ window#waybar {
 }
 
 #workspaces {
-    margin: 4px 3px 4px 4px; 
+    margin: 5px 5px 5px 0px; 
     padding: 0px 1px;
     border-radius: 4px 4px 10px 10px; 
     border: 0px;
@@ -86,37 +85,6 @@ tooltip label {
     font-weight: normal;
 }
 
-window#waybar.empty #window {
-    background-color: transparent;
-}
-
-#taskbar {
-    background: @backgroundlight;
-    margin: 4px 10px 4px 0px; 
-    padding: 0px;
-    border-radius: 10px; 
-    font-weight: normal;
-    font-style: normal;
-    border: 2px solid @backgroundlight; 
-}
-
-#taskbar button {
-    margin: 0;
-    border-radius: 10px; 
-    padding: 0px 3px; 
-}
-
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
-#custom-browser,
-#custom-filemanager,
-#custom-appmenu,
 #clock {
     margin-right: 15px; 
     background-color: @backgroundlight; /* @backgrounddark; */
@@ -124,63 +92,21 @@ window#waybar.empty #window {
     padding: 2px 8px 1px 8px; 
 }
 
-#custom-quicklink1,
-#custom-quicklink2,
-#custom-quicklink3,
-#custom-quicklink4,
-#custom-quicklink5,
-#custom-quicklink6,
-#custom-quicklink7,
-#custom-quicklink8,
-#custom-quicklink9,
-#custom-quicklink10 {
-    padding: 0px;
-    margin-right: 5px; 
-    color: @iconcolor;
-}
-
-#custom-appmenu {
-    background-color: @backgrounddark;
-    color: @textcolor1;
-    border-radius: 10px; 
-    margin: 5px; 
-}
-
-#custom-vpn {
-    background-color: @backgrounddark;
-    border-radius: 10px; 
-    min-width: 75px; /* Уменьшено с 95px */
-    margin: 5px 5px 5px 2px; 
-}
-
-#custom-vpnstatus {
-    border-radius: 10px; 
-    min-width: 0px;
-    margin: 5px 5px 5px 0px; 
-}
-
-#custom-monitors {
-    border-radius: 10px; 
-    min-width: 0px;
-    margin: 5px 5px 5px 0px; 
-}
-
-#custom-exit {
-    margin: 1px 15px 0px 0px; 
-    padding: 0px;
-    color: @float_font_color;
-}
-
 #disk,
 #memory,
 #cpu,
+#tray,
 #custom-vpnstatus,
 #language,
 #custom-vpn,
+#pulseaudio,
 #custom-monitors,
+#battery,
+#network,
+#pulseaudio,
 #temperature {
-    margin: 0px;
-    padding: 0px;
+    margin: 5px 5px 5px 5px;
+    padding: 0;
     color: @float_font_color;
 }
 
@@ -189,7 +115,6 @@ window#waybar.empty #window {
 }
 
 #clock {
-
     color: @textcolor1;
     border-radius: 20px;
     margin: 5px 5px 5px 0px;
@@ -197,20 +122,10 @@ window#waybar.empty #window {
 
 #pulseaudio {
     color: @float_font_color;
-    border-radius: 30px; 
-    margin: 5px 5px 5px 0px;
-    padding: 2px 8px 1px 8px;
 }
 
 #pulseaudio.muted {
     color: @float_font_color;
-}
-
-
-#network {
-    border-radius: 30px;
-    margin: 5px 5px 5px 0px;
-    /* padding: 2px 8px 1px 8px; */
 }
 
 #network.ethernet,
@@ -238,7 +153,6 @@ window#waybar.empty #window {
     /* background-color: @backgroundlight; */
     color: @float_font_color;/* color: @fontblack; */
     border-radius: 30px; 
-    padding: 2px 8px 1px 8px; 
 }
 
 @keyframes blink {
@@ -256,10 +170,6 @@ window#waybar.empty #window {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-
-#tray {
-    margin: 0px 8px 0px 0px; 
 }
 
 #tray > .passive {

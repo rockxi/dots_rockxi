@@ -2,7 +2,7 @@
     // Workspaces
     "hyprland/workspaces" : {
         "on-click": "activate",
-        "active-only": true,
+        "active-only": false,
         "all-outputs": true,
         "format": "{}",
         "format-icons": {
@@ -71,7 +71,7 @@
     },
     "custom/padding":
     {
-        "format": " "
+        "format": "    "
     },
     // System
     "custom/system": {
@@ -81,13 +81,13 @@
 
     // CPU
     "cpu": {
-        "format": "   {usage}%",
+        "format": "{usage}%",
         "on-click": "gnome-system-monitor"
     },
 
     // Memory
     "memory": {
-        "format": " {used} Gb ", /*  */
+        "format": "{used} Gb", /*  */
         "on-click": "gnome-system-monitor"
     },
 
@@ -100,10 +100,10 @@
     }, 
 
     "temperature": {
-        "format": "{temperatureC}°C  "
+        "format": "{temperatureC}°C" /*  */
     },
     "hyprland/language": {
-        "format": "󰗊  {short}"
+        "format": "{short}" /* 󰗊 */
     },
 
     // Group Hardware
@@ -129,12 +129,12 @@
      
     },
     "custom/monitors" : {
-        "format" : "{} 󰍺 ",
+        "format" : "{}", /*󰍺*/
         "exec": "~/.config/waybar/scr/monitors.sh",
         "interval": 1
     },
     "custom/vpnstatus": {
-        "format": "{} ",
+        "format": "{}",
         "exec": "~/.config/waybar/scr/vpn-status.sh",
         "interval": 1,
         "return-type": "json",
@@ -148,7 +148,7 @@
         "format": "{ifname}",
         "format-wifi": " ", /* "    {signalStrength}% ", */
         "format-ethernet": "  {ipaddr}",
-        "format-disconnected": " 󰖪 ", //An empty format will hide the module.
+        "format-disconnected": "󰖪 ", //An empty format will hide the module.
         "tooltip-format": " {ifname} via {gwaddri}",
         "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
@@ -166,8 +166,8 @@
         },
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% 󱐋",
-        "format-plugged": "{capacity}% 󱐋",
-        "format-alt": "{capacity}%  {time} {icon}",
+        "format-plugged": "󱐋",
+        "format-alt": "{capacity}%  {time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " "]
@@ -176,10 +176,10 @@
     // Pulseaudio
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%",
+        "format": "{volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " X%",//{format_source}",
+        "format-muted": "X%",//{format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -196,7 +196,7 @@
 
     // Bluetooth
     "bluetooth": {
-        "format": "󰂯 ",
+        "format": " 󰂯",
         "format-disabled": "󰂲",
         "format-off": "",
         "interval": 30,
