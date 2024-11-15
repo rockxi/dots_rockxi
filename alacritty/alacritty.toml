@@ -21,3 +21,9 @@ save_to_clipboard = true
 
 [cursor]
 style = "Beam"
+
+[keyboard]
+bindings =[
+{ key= "Back", mods= "Control", chars= "\u001b\u007f" } # Delete word
+]
+

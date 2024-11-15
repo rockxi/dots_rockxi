@@ -14,5 +14,6 @@ cp -r Hermit ~/.local/share/fonts/
 cp -r .wallpapers ~/.wallpapers 
 git clone https://github.com/LGFae/swww
 cd swww
+sudo dnf install cargo
 cargo build --release
 echo 'export PATH=$PATH:$HOME/.P/swww/target/release' >> ~/.zshrc
