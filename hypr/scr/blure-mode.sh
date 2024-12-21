@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Путь к файлу конфигурации
-CONFIG_FILE="/home/r/.config/hypr/conf/decoration.conf"
+CONFIG_FILE="$HOME/.config/hypr/conf/decoration.conf"
 
 # Строка, которую нужно переключать
 TARGET_LINE="layerrule = blur,waybar"

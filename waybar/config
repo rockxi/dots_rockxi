@@ -28,7 +28,7 @@
         "pulseaudio",
         "battery",
         //"custom/padding",
-        "memory",
+        //"memory",
         //"cpu",
         //"temperature",
         //"keyboard-state",

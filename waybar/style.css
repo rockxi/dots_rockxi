@@ -15,6 +15,7 @@
 /* @define-color background-network  	#91caff; */
 /* @define-color background-audio  	#f2e658; */
 * {
+    /* font-family: "Hurmit Nerd Font", Roboto, FontAwesome, Helvetica, Arial, sans-serif; */
     font-family: "Hurmit Nerd Font", Roboto, FontAwesome, Helvetica, Arial, sans-serif;
     font-size: 13px; 
     border: none;
@@ -31,7 +32,7 @@ window#waybar {
 }
 
 #workspaces {
-    margin: 5px 5px 5px 0px; 
+    /* margin: 5px 5px 5px 0px;  */
     padding: 0px 1px;
     border-radius: 4px 4px 10px 10px; 
     border: 0px;
@@ -40,7 +41,6 @@ window#waybar {
 
 #workspaces button {
     padding: 1px 2px; 
-    margin: 2px 2px; 
     border-radius: 12px; 
     border: 0px;
     color: @float_font_color;

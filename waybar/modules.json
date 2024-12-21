@@ -65,9 +65,9 @@
     // Clock
     "clock": {
         "timezone": "Russia/Moscow",
-        "format": "{:%H:%M}",
+        "format": "{:%H:%M %A %d.%m.%y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%H:%M %A %d.%m.%y}" 
+        "format-alt": "{:%H:%M}" 
     },
     "custom/padding":
     {
@@ -164,8 +164,8 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% 󱐋",
+        "format": "{icon} {capacity}% ",
+        "format-charging": "󱐋 {capacity}% ",
         "format-plugged": "󱐋",
         "format-alt": "{capacity}%  {time}",
         // "format-good": "", // An empty format will hide the module
