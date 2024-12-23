@@ -1,5 +1,3 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -7,37 +5,6 @@
 return {
 
   -- == Examples of Adding Plugins == 
-  {
-    "dccsillag/magma-nvim",
-    version = "*",
-    lazy = false, -- workaround while debugging other stuff
-    ft = { "ipynb" },
-    keys = {
-      {
-        "<leader>mi",
-        "<cmd>MagmaInit<CR>",
-        desc = "This command initializes a runtime for the current buffer.",
-      },
-      { "<leader>mo", "<cmd>MagmaEvaluateOperator<CR>", desc = "Evaluate the text given by some operator." },
-      { "<leader>ml", "<cmd>MagmaEvaluateLine<CR>",     desc = "Evaluate the current line." },
-      { "<leader>mv", "<cmd>MagmaEvaluateVisual<CR>",   desc = "Evaluate the selected text." },
-      { "<leader>mc", "<cmd>MagmaEvaluateOperator<CR>", desc = "Reevaluate the currently selected cell." },
-      { "<leader>mr", "<cmd>MagmaRestart!<CR>",         desc = "Shuts down and restarts the current kernel." },
-      {
-        "<leader>mx",
-        "<cmd>MagmaInterrupt<CR>",
-        desc = "Interrupts the currently running cell and does nothing if not cell is running.",
-      },
-    },
-  },
-  {  "meatballs/notebook.nvim",
-  keys = {
-      { "<leader>rl", "<cmd>NBInsertCell<CR>", desc = "Insert a cell below the current cell" },
-      { "<leader>rd", "<cmd>NBDeleteCell<CR>",     desc = "Delete the current cell" },
-      { "<leader>rn", "<cmd>NBAddCell<CR>", desc = "Add a cell to the end of the notebook" },
-      { "<leader>rj", "<cmd>NBMoveCellDown<CR>",   desc = "Move the current cell down the notebook by one" },
-      { "<leader>rk", "<cmd>NBMoveCellUp<CR>",         desc = "Move the current cell up the notebook by one" },
-    }},
   "andweeb/presence.nvim",
   {
     "ray-x/lsp_signature.nvim",
