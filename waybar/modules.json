@@ -129,7 +129,7 @@
      
     },
     "custom/monitors" : {
-        "format" : "{}", /*󰍺*/
+        "format" : "{}", 
         "exec": "~/.config/waybar/scr/monitors.sh",
         "interval": 1
     },
@@ -196,7 +196,7 @@
 
     // Bluetooth
     "bluetooth": {
-        "format": " 󰂯",
+        "format": "󰂯",
         "format-disabled": "󰂲",
         "format-off": "",
         "interval": 30,

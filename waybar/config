@@ -35,8 +35,8 @@
         //"custom/padding",
         "bluetooth",
         "network", 
-        "tray",
         "clock", 
+        "tray",
         "custom/padding"
     ]
 }
