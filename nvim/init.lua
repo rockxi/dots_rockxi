@@ -50,11 +50,21 @@ function _G.define_all_cells()
     end
 end
 
+
 vim.api.nvim_create_autocmd(
-    { "BufRead", },
-    { pattern = { "*.ipynb" }, command = "MoltenInit" }
+    { "BufRead" },
+    {
+        pattern = { "*.ipynb" },
+        callback = function()
+            vim.cmd("MoltenInit")
+            vim.cmd("NBAddCell")
+        end
+    }
 )
 vim.api.nvim_create_autocmd(
      "User",
     { pattern = { "MoltenInitPost", "NBPostRender" }, callback = _G.define_all_cells }
 )
+vim.api.nvim_set_keymap('n', '<Leader>j', ':bnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>k', ':bprevious<CR>', { noremap = true, silent = true })
+

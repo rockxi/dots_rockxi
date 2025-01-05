@@ -94,8 +94,10 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
+#   export VISUAL='vim'
 # else
-#   export EDITOR='nvim'
+  export EDITOR='nvim'
+  export VISUAL='nvim'
 # fi
 
 # Compilation flags
@@ -118,5 +120,8 @@ alias x="xdg-open"
 alias 'v+'="sudo vpn connect"
 alias 'v-'="sudo vpn disconnect"
 alias typing="$HOME/.P/termboard/main"
+alias V="$HOME/.P/nekoray.AppImage"
+alias r=ranger
+alias ':q'='exit'
 
 export QSYS_ROOTDIR="/home/r/.P/intelFPGA_lite/21.1/quartus/sopc_builder/bin"

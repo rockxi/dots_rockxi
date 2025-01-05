@@ -121,4 +121,16 @@
 /home/r/.wallpapers/explorer_orange_sunset.jpg
 /home/r/.wallpapers/Evangelion.png
 /home/r/.wallpapers/landscape/NOUNS-ship-two.jpg
+/home/r/.wallpapers/landscape/NOUNS-ship-two.jpg
+/home/r/.wallpapers/Under_Starlit_Sky.png
+/home/r/.wallpapers/films/MEDIA-battlefield-4.jpg
+/home/r/.wallpapers/art/liberty-leading-the-people.jpg
+/home/r/.wallpapers/art/frontier.jpg
+/home/r/.wallpapers/lofoten2.jpg
+/home/r/.wallpapers/maller/astronomy.jpg
+/home/r/.wallpapers/art/Boyaryna Morozova.jpg
+/home/r/.wallpapers/films/lotrA.jpg
+/home/r/.wallpapers/Fantasy-Landscape3.png
+/home/r/.wallpapers/Fantasy-Landscape3.png
+/home/r/.wallpapers/rocket_launch.jpg
 /home/r/.wallpapers/spaceship-start.jpg
