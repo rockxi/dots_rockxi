@@ -6,6 +6,7 @@ return {
 
   -- == Examples of Adding Plugins == 
   "andweeb/presence.nvim",
+  "github/copilot.vim",
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",

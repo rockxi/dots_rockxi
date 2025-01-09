@@ -67,4 +67,9 @@ vim.api.nvim_create_autocmd(
 )
 vim.api.nvim_set_keymap('n', '<Leader>j', ':bnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>k', ':bprevious<CR>', { noremap = true, silent = true })
-
+vim.keymap.set('i', '<C-L>', 'copilot#Accept("\\<CR>")', {
+          expr = true,
+          replace_keycodes = false
+        })
+        vim.g.copilot_no_tab_map = true
+-- vim.api.nvim_set_keymap('n', '<C-J>', 'copilot#Accept("\\<CR>")', { noremap = true, silent = true })

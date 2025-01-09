@@ -1,7 +1,7 @@
 [font]
 size = 10.5
 
-[shell]
+[terminal.shell]
 program = "/bin/zsh"
 args = ["-l"]
 
@@ -9,8 +9,8 @@ args = ["-l"]
 family = "Hurmit Nerd Font"
 style = "Regular"
 
-[window]
-opacity = 0.8
+# [window]
+# opacity = 0.8
 
 [window.padding]
 x = 15
@@ -19,11 +19,13 @@ y = 15
 [selection]
 save_to_clipboard = true
 
-[cursor]
-style = "Beam"
+# [cursor]
+# style = "Beam"
 
 [keyboard]
 bindings =[
 { key= "Back", mods= "Control", chars= "\u001b\u007f" } # Delete word
 ]
+
+[terminal]
 

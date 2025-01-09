@@ -11,7 +11,7 @@ set_wallpaper() {
     if [ -n "$wallpaper" ]; then
         # Обновляем конфигурацию Hyprpaper
         sed -i "s|^preload = .*|preload = ${wallpaper}|" "$CONFIG_PATH"
-        sed -i "s|^wallpaper = .*|wallpaper = , ${wallpaper}|" "$CONFIG_PATH"
+        sed -i "s|^wallpaper = .*|wallpaper = ,${wallpaper}|" "$CONFIG_PATH"
         
         # Записываем в историю
         echo "$wallpaper" >> "$HISTORY_FILE"
