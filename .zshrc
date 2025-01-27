@@ -123,5 +123,8 @@ alias typing="$HOME/.P/termboard/main"
 alias V="$HOME/.P/nekoray.AppImage"
 alias r=ranger
 alias ':q'='exit'
+alias vial="$HOME/.P/Vial-v0.7.1-x86_64.AppImage"
 
 export QSYS_ROOTDIR="/home/r/.P/intelFPGA_lite/21.1/quartus/sopc_builder/bin"
+export HTTP_PROXY="http://127.0.0.1:2080"
+export HTTPS_PROXY="http://127.0.0.1:2080"

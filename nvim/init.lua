@@ -72,4 +72,32 @@ vim.keymap.set('i', '<C-L>', 'copilot#Accept("\\<CR>")', {
           replace_keycodes = false
         })
         vim.g.copilot_no_tab_map = true
--- vim.api.nvim_set_keymap('n', '<C-J>', 'copilot#Accept("\\<CR>")', { noremap = true, silent = true })
+
+-- vim.api.nvim_set_keymap('n', '<C-L>', 'copilot#Accept("\\<CR>")', { noremap = true, silent = true })
+
+require('toggleterm').setup{
+    size = function(term)
+        return term.direction == 'vertical' and vim.o.columns * 0.4 or 20
+    end
+}
+local Terminal = require('toggleterm.terminal').Terminal
+
+local py_term = Terminal:new({
+    cmd = "python3",  -- Базовое значение, будет переопределено
+    dir = "git_dir",
+    direction = "vertical",
+    hidden = true,
+    close_on_exit = false,  -- Важно: запрещаем авто-закрытие
+    on_open = function(term)
+        vim.cmd("startinsert!")
+    end,
+})
+
+function _G.open_python_term()
+    local file_path = vim.api.nvim_buf_get_name(0)
+    py_term.cmd = "python3 " .. vim.fn.shellescape(file_path) .. " && echo 'Press ENTER to exit...'"
+    py_term:toggle()
+end
+
+vim.api.nvim_set_keymap('n', '<Leader>tt', '<cmd>lua open_python_term()<CR>', { noremap = true, silent = true })
+

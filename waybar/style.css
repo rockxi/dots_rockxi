@@ -15,8 +15,8 @@
 /* @define-color background-network  	#91caff; */
 /* @define-color background-audio  	#f2e658; */
 * {
-    /* font-family: "Hurmit Nerd Font", Roboto, FontAwesome, Helvetica, Arial, sans-serif; */
     font-family: "Hurmit Nerd Font", Roboto, FontAwesome, Helvetica, Arial, sans-serif;
+    /* font-family:  Arial, sans-serif; */
     font-size: 13px; 
     border: none;
 }

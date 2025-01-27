@@ -13,6 +13,7 @@ return {
         "lua_ls",
         "pyright",
         "svlangserver",
+        "sqlls",
         -- add more arguments for adding more language servers
       },
     },
