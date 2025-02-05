@@ -5,6 +5,7 @@ export PATH=$PATH:$HOME/.P/intelFPGA_lite/21.1/quartus/bin/
 export PATH=$PATH:$HOME/.P/swww/target/release:$HOME/.P/questasim2/questasim/linux_x86_64
 export PATH=$PATH:$HOME/.P/questa/questasim/linux_x86_64
 export PATH=$PATH:$HOME/.P/questa/questasim/RUVM_2021.2
+export PATH=$PATH:$HOME/.P/pycharm/bin
 
 export LM_LICENSE_FILE="/home/r/.P/questa/questasim/license.dat"
 
@@ -124,7 +125,13 @@ alias V="$HOME/.P/nekoray.AppImage"
 alias r=ranger
 alias ':q'='exit'
 alias vial="$HOME/.P/Vial-v0.7.1-x86_64.AppImage"
+alias lm-studio="$HOME/.P/lm-studio.AppImage"
+export DOCKER_HOST=unix:///run/docker.sock
 
 export QSYS_ROOTDIR="/home/r/.P/intelFPGA_lite/21.1/quartus/sopc_builder/bin"
-export HTTP_PROXY="http://127.0.0.1:2080"
-export HTTPS_PROXY="http://127.0.0.1:2080"
+export HTTP_PROXY="http://127.0.0.1:2090"
+export HTTPS_PROXY="http://127.0.0.1:2090"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/r/.lmstudio/bin"
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
