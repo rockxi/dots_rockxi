@@ -93,11 +93,34 @@ local py_term = Terminal:new({
     end,
 })
 
+
+local java_term = Terminal:new({
+    cmd = "java",  -- Базовое значение, будет переопределено
+    dir = "git_dir",
+    direction = "vertical",
+    hidden = true,
+    close_on_exit = false,  -- Важно: запрещаем авто-закрытие
+    on_open = function(term)
+        vim.cmd("startinsert!")
+    end,
+})
+function _G.open_java_term()
+    local file_path = vim.api.nvim_buf_get_name(0)
+    py_term.cmd = "java " .. vim.fn.shellescape(file_path) .. " && echo 'Press ENTER to exit...'"
+    py_term:toggle()
+end
+
 function _G.open_python_term()
     local file_path = vim.api.nvim_buf_get_name(0)
     py_term.cmd = "python3 " .. vim.fn.shellescape(file_path) .. " && echo 'Press ENTER to exit...'"
     py_term:toggle()
 end
 
+function _G.open_python_term_main()
+    local file_path = vim.fn.getcwd() .. '/main.py'
+    py_term.cmd = "unset HTTP_PROXY && unset HTTPS_PROXY && python3 " .. vim.fn.shellescape(file_path) .. " && echo 'Press ENTER to exit...'"
+    py_term:toggle()
+end
 vim.api.nvim_set_keymap('n', '<Leader>tt', '<cmd>lua open_python_term()<CR>', { noremap = true, silent = true })
-
+vim.api.nvim_set_keymap('n', '<Leader>tr', '<cmd>lua open_python_term_main()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>jj', '<cmd>lua open_java_term()<CR>', { noremap = true, silent = true })

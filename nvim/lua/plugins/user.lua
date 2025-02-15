@@ -5,8 +5,11 @@
 return {
 
   -- == Examples of Adding Plugins == 
+  'mfussenegger/nvim-dap', 
+  'mfussenegger/nvim-dap-python',
   "andweeb/presence.nvim",
   "github/copilot.vim",
+  "nvim-java/starter-lazyvim",
 
 {
   "lervag/vimtex",

@@ -124,13 +124,18 @@ alias typing="$HOME/.P/termboard/main"
 alias V="$HOME/.P/nekoray.AppImage"
 alias r=ranger
 alias ':q'='exit'
-alias vial="$HOME/.P/Vial-v0.7.1-x86_64.AppImage"
+alias vial="$HOME/.P/vial.AppImage"
 alias lm-studio="$HOME/.P/lm-studio.AppImage"
+alias cursor="$HOME/.P/cursor.AppImage"
+alias pc="nohup pycharm > /dev/null 2>&1 &"
+alias pp="unset HTTP_PROXY && unset HTTPS_PROXY && python main.py"
 export DOCKER_HOST=unix:///run/docker.sock
+
 
 export QSYS_ROOTDIR="/home/r/.P/intelFPGA_lite/21.1/quartus/sopc_builder/bin"
 export HTTP_PROXY="http://127.0.0.1:2090"
 export HTTPS_PROXY="http://127.0.0.1:2090"
+
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/r/.lmstudio/bin"

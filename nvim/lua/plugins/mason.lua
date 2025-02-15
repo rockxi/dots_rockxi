@@ -14,6 +14,7 @@ return {
         "pyright",
         "svlangserver",
         "sqlls",
+        "jdtls"
         -- add more arguments for adding more language servers
       },
     },
@@ -52,10 +53,58 @@ return {
               program = "${file}", -- This configuration will launch the current file if used.
             },
           }
+      
+        end,
+
+--
+      },
+    },
+{
+    "jay-babu/mason-nvim-dap.nvim",
+    opts = {
+      handlers = {
+        python = function(source_name)
+          local dap = require "dap"
+          dap.adapters.python = {
+            type = "executable",
+            command = "/usr/bin/python3",
+            args = {
+              "-m",
+              "debugpy.adapter",
+            },
+          }
+
+          dap.configurations.python = {
+            {
+              type = "python",
+              request = "launch",
+              name = "Launch file",
+              program = "${file}", -- This configuration will launch the current file if used.
+            },
+          }
+      
+        end,
+        java = function(source_name)
+          local dap = require "dap"
+          dap.adapters.java = {
+            type = "server",
+            host = "127.0.0.1",
+            port = 5005,
+          }
+
+          dap.configurations.java = {
+            {
+              type = "java",
+              request = "attach",
+              name = "Attach to process",
+              hostName = "127.0.0.1",
+              port = 5005,
+            },
+          }
         end,
       },
     },
-  },
+  },}
   -- {
   --   "jay-babu/mason-nvim-dap.nvim",
   --   -- overrides `require("mason-nvim-dap").setup(...)`
