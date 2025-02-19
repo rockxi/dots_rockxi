@@ -127,7 +127,8 @@ alias ':q'='exit'
 alias vial="$HOME/.P/vial.AppImage"
 alias lm-studio="$HOME/.P/lm-studio.AppImage"
 alias cursor="$HOME/.P/cursor.AppImage"
-alias pc="nohup pycharm > /dev/null 2>&1 &"
+alias pc="nohup pycharm > /dev/null 2>&1 & exit"
+alias uns="unset HTTP_PROXY && unset HTTPS_PROXY"
 alias pp="unset HTTP_PROXY && unset HTTPS_PROXY && python main.py"
 export DOCKER_HOST=unix:///run/docker.sock
 

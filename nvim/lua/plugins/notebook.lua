@@ -1,0 +1,3 @@
+return {
+  "meatballs/notebook.nvim"
+}
