@@ -1,9 +1,7 @@
 [font]
 size = 11 
 
-[terminal.shell]
-program = "/bin/zsh"
-args = ["-l"]
+[terminal]
 
 [font.normal]
 family = "Hurmit Nerd Font"
@@ -24,6 +22,3 @@ save_to_clipboard = true
 bindings =[
 { key= "Back", mods= "Control", chars= "\u001b\u007f" } # Delete word
 ]
-
-[terminal]
-

@@ -1,5 +1,8 @@
-sudo dnf update -y
-sudo dnf install -y zsh
+sudo apt install ripgrep
+pip install jupyter ipykernel
+
+sudo apt update
+sudo apt install zsh
 sudo dnf install -y lsd
 sudo dnf install -y neovim
 sudo dnf install -y ranger

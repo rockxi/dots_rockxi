@@ -16,26 +16,26 @@
         "~/.config/waybar/modules.json"
     ],    
     "modules-left": [
+        "hyprland/workspaces",
     ],
     "modules-center": [
+        "clock", 
     ],
     "modules-right": [
-        "hyprland/workspaces",
         "hyprland/language",
-        "custom/vpnstatus",
+//        "custom/vpnstatus",
         "custom/monitors",
         //"custom/padding",
         "pulseaudio",
         "battery",
         //"custom/padding",
-        //"memory",
+        "memory",
         //"cpu",
         //"temperature",
         //"keyboard-state",
         //"custom/padding",
         "bluetooth",
         "network", 
-        "clock", 
         "tray",
         "custom/padding"
     ]

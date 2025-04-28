@@ -84,24 +84,6 @@ return {
           }
       
         end,
-        java = function(source_name)
-          local dap = require "dap"
-          dap.adapters.java = {
-            type = "server",
-            host = "127.0.0.1",
-            port = 5005,
-          }
-
-          dap.configurations.java = {
-            {
-              type = "java",
-              request = "attach",
-              name = "Attach to process",
-              hostName = "127.0.0.1",
-              port = 5005,
-            },
-          }
-        end,
       },
     },
   },}

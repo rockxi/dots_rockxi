@@ -117,6 +117,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias n=nvim
 alias p="python main.py"
+alias pd='function _pd() { if [ -z "$1" ]; then python -m pdb main.py; else python -m pdb "$1"; fi; }; _pd'
 alias x="xdg-open"
 alias 'v+'="sudo vpn connect"
 alias 'v-'="sudo vpn disconnect"
@@ -130,14 +131,12 @@ alias cursor="$HOME/.P/cursor.AppImage"
 alias pc="nohup pycharm > /dev/null 2>&1 & exit"
 alias uns="unset HTTP_PROXY && unset HTTPS_PROXY"
 alias pp="unset HTTP_PROXY && unset HTTPS_PROXY && python main.py"
-export DOCKER_HOST=unix:///run/docker.sock
-
-
-export QSYS_ROOTDIR="/home/r/.P/intelFPGA_lite/21.1/quartus/sopc_builder/bin"
-export HTTP_PROXY="http://127.0.0.1:2090"
-export HTTPS_PROXY="http://127.0.0.1:2090"
+# export DOCKER_HOST=unix:///run/docker.sock
 
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/r/.lmstudio/bin"
+export PATH="$PATH:/home/r/.P/pycharm-2024.3.4/bin"
+
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+export PATH="/home/r/.P:$PATH"

@@ -1,169 +1,85 @@
+@define-color backgroundlight rgba(0,0,0,0.25);
+@define-color backgrounddark rgba(0,0,0,0.4);
+@define-color accent #00dfb0;
+@define-color bordercolor #FFFFFF;
+@define-color textcolor1 #ffffff;
+@define-color fontwhite #ffffff;
+@define-color redalert #f53c3c;
 
-@define-color backgroundlight #F0F0F0; /* #FFFFFF; */
-@define-color backgrounddark #549563; /* #1cad82; */
-@define-color workspacesbackground1 #FFFFFF;
-@define-color workspacesbackground2 #00DFB0; /* #CCCCCC; */
-@define-color bordercolor #FFFFF0;
-@define-color textcolor1 #000000;
-@define-color fontblack #000000;
-@define-color fontwhite #FFFFFF;
-@define-color iconcolor #FFFFFF;
-
-@define-color fontblack #050611;
-@define-color fontwhite #FAF0E6;
-@define-color float_font_color #ffffff;
-/* @define-color background-network  	#91caff; */
-/* @define-color background-audio  	#f2e658; */
 * {
-    font-family: "Hurmit Nerd Font", Roboto, FontAwesome, Helvetica, Arial, sans-serif;
-    /* font-family:  Arial, sans-serif; */
-    font-size: 13px; 
+    font-family: "Hurmit Nerd Font", "JetBrainsMono Nerd Font", Roboto, sans-serif;
+    font-size: 13px;
     border: none;
+    color: @textcolor1;
 }
 
-/* Удалены фиксированные высоты */
 window#waybar {
-    background-color: rgba(0,0,0,0.0);
-    border-bottom: 0px solid #FFFF00;
-    /* color: #FFFFFF; */
-    transition-property: background-color;
-    transition-duration: 0.5s;
-    padding: 2px 0px; /* Добавлено уменьшение вертикальных отступов */
+    background: transparent;
+    padding: 6px 6px;
 }
 
 #workspaces {
-    /* margin: 5px 5px 5px 0px;  */
-    padding: 0px 1px;
-    border-radius: 4px 4px 10px 10px; 
-    border: 0px;
-    font-weight: bold;
+    background: @backgrounddark;
+    border-radius: 10px;
+    padding: 2px 6px;
+    margin: 0 6px;
 }
 
 #workspaces button {
-    padding: 1px 2px; 
-    border-radius: 12px; 
-    border: 0px;
-    color: @float_font_color;
-    transition: all 0.3s ease-in-out;
+    padding: 4px 10px;
+    margin: 0 3px;
+    border-radius: 12px;
+    background: transparent;
+    color: @textcolor1;
 }
 
 #workspaces button.active {
-    color: @float_font_color;
-    /* background: #91caff; */
-    border-radius: 4px 4px 10px 10px; 
-    min-width: 35px; /* Уменьшено с 45px */
-    transition: all 0.3s ease-in-out;
+    background: @accent;
+    color: @fontwhite;
 }
 
 #workspaces button:hover {
-    color: @textcolor1;
-    background: @workspacesbackground1;
-    border-radius: 10px; 
+    background: rgba(255,255,255,0.1);
+    color: @fontwhite;
 }
 
-tooltip {
-    border-radius: 8px; 
-    background-color: @backgroundlight;
-    opacity: 0.8;
-    padding: 10px; 
-    margin: 0px;
-}
-
-tooltip label {
-    color: @fontblack;
-}
-
-
-
-
-#window {
-    background: @backgroundlight;
-    margin: 5px 10px 5px 0px; 
-    padding: 1px 8px 0px 8px; 
-    border-radius: 20px; 
-    color: @fontblack;
-    font-weight: normal;
-}
-
-#clock {
-    margin-right: 15px; 
-    background-color: @backgroundlight; /* @backgrounddark; */
-    color: @float_font_color; /* @iconcolor; */
-    padding: 2px 8px 1px 8px; 
-}
-
-#disk,
-#memory,
+#custom-appmenu, 
+#custom-exit,
+#clock,
 #cpu,
-#tray,
-#custom-vpnstatus,
-#language,
-#custom-vpn,
-#pulseaudio,
-#custom-monitors,
-#battery,
+#memory,
+#disk,
 #network,
+#battery,
 #pulseaudio,
-#temperature {
-    margin: 5px 5px 5px 5px;
-    padding: 0;
-    color: @float_font_color;
-}
-
-#language {
-    margin-right: 7px;
+#bluetooth,
+#custom-vpnstatus,
+#custom-monitors,
+#hyprland-window {
+    background: @backgroundlight;
+    padding: 4px 10px;
+    margin: 0 4px;
+    border-radius: 20px;
+    font-weight: 500;
 }
 
 #clock {
-    color: @textcolor1;
-    border-radius: 20px;
-    margin: 5px 5px 5px 0px;
+    padding: 4px 12px;
+    font-weight: bold;
 }
 
-#pulseaudio {
-    color: @float_font_color;
-}
-
-#pulseaudio.muted {
-    color: @float_font_color;
-}
-
-#network.ethernet,
-#network.wifi {
-    color: @float_font_color;
-}
-
-#network.disconnected {
-    color: #f53c3c;
-}
-
-#bluetooth,
-#bluetooth.on,
-#bluetooth.connected {
-    color: @float_font_color;
-}
-
-/* #bluetooth.off {
-    background-color: transparent;
-    padding: 0px;
-    margin: 0px;
-} */
+/* #hyprland-window { */
+/*     overflow: hidden; */
+/*     text-overflow: ellipsis; */
+/*     white-space: nowrap; */
+/* } */
 
 #battery {
-    /* background-color: @backgroundlight; */
-    color: @float_font_color;/* color: @fontblack; */
-    border-radius: 30px; 
-}
-
-@keyframes blink {
-    to {
-        background-color: @backgroundlight;
-        color: @fontblack;
-    }
+    background: @backgroundlight;
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
+    background: @redalert;
     color: @fontwhite;
     animation-name: blink;
     animation-duration: 0.5s;
@@ -172,22 +88,36 @@ tooltip label {
     animation-direction: alternate;
 }
 
-#tray > .passive {
-    -gtk-icon-effect: dim;
+#pulseaudio.muted {
+    color: @fontwhite;
+    opacity: 0.5;
+}
+
+#network.disconnected {
+    color: @redalert;
+}
+
+#tray {
+    margin: 0 6px;
 }
 
 #tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
-    border-radius: 10px; 
-    padding: 2px 6px; 
+    background-color: @redalert;
+    border-radius: 12px;
+    padding: 2px 6px;
 }
 
-label:focus {
-    background-color: #000000;
+tooltip {
+    background: @backgrounddark;
+    border-radius: 10px;
+    padding: 8px 12px;
+    color: @fontwhite;
+    opacity: 0.95;
 }
 
-#backlight {
-    background-color: #90b1b1;
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
 }
-
